@@ -207,9 +207,9 @@ img {
 }
 
 .modal-content {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
   position: absolute;
   top: 50%;
@@ -221,7 +221,7 @@ img {
   max-height: 581px;
   height: 100%;
 
-  padding: 10px;
+  padding: 40px;
   background-color: var(--color-white);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -246,10 +246,86 @@ img {
   height: 18px;
 }
 .is-hidden {
+  pointer-events: none;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translatey(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form p {
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.172;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.172;
+  letter-spacing: 0.01em;
+  color: var(--second-color-font);
+}
+
+.form-input {
+  margin-bottom: 10px;
+  padding: 14px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+}
+
+.form-textarea {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.form-textarea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.172;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-group {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-label-policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--second-color-font);
+}
+.link-policy {
+  color: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  color: var(--main-color-mark);
+}
+.form-button-place {
+  display: flex;
+  justify-content: center;
 }
 
 /* Секция "Наши преимущества" */
