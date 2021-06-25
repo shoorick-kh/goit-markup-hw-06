@@ -244,6 +244,13 @@ img {
 .close {
   width: 18px;
   height: 18px;
+  transition-property: color, fill, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-close:focus .close,
+.button-close:hover .close {
+  fill: var(--main-color-mark);
 }
 .is-hidden {
   pointer-events: none;
